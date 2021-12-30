@@ -1,0 +1,15 @@
+name: imgutils
+description: random image stuff
+version: 1.0.0
+# homepage: https://www.example.com
+
+environment:
+  sdk: '>=2.14.3 <3.0.0'
+
+dev_dependencies:
+  lints: ^1.0.0
+dependencies: 
+  args: ^2.3.0
+  image: ^3.0.8
+  mime: ^1.0.1
+  path: ^1.8.0
