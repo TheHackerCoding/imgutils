@@ -59,7 +59,7 @@ class CursedCommand extends Command {
       }
 
       var filename = basenameWithoutExtension(_file.path);
-      await File('${filename}_crystalized.png').writeAsBytes(encodePng(img));
+      await File('${filename}_cursed.png').writeAsBytes(encodePng(img));
     }
 
     files?.forEach((element) {
