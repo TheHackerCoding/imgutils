@@ -1,19 +1,24 @@
 import 'package:args/command_runner.dart';
 import 'package:image/image.dart';
+import 'package:path/path.dart';
+import '../utils.dart';
 import 'dart:math';
 import 'dart:io';
 
-import 'package:mime/mime.dart';
-import 'package:path/path.dart';
+
 
 class CursedCommand extends Command {
+  @override
   final name = "cursed";
+  @override
   final description = "makes cursed images";
-
+  @override
+  final aliases = ["c"];
   CursedCommand() {
     argParser.addOption('limit', abbr: 'l', defaultsTo: '256');
   }
 
+  @override
   void run() {
     var files = argResults?.rest;
     Random randomizer;
@@ -24,7 +29,7 @@ class CursedCommand extends Command {
       randomizer = Random(int.parse(seed));
     }
 
-    if (files?.length == 0) {
+    if (files!.isEmpty) {
       print("No files given. Exiting...");
       exit(1);
     }
@@ -33,22 +38,12 @@ class CursedCommand extends Command {
 
     int limit = int.parse(argResults?['limit']);
 
-    void process(String file) async {
-      var _file = File(file);
-      if (_file.existsSync() == false) {
-        print("File $file doesn't exit. Exiting...");
-        exit(1);
-      }
+    void process(String _file) async {
+      var _img = processImg(_file);
+      var img = _img.img;
+      var file = _img.file;
 
-      var mime = lookupMimeType(file);
-      var _mime = mime?.split("/");
-      if (_mime?.first != 'image') {
-        print('Image file not give. Exiting...');
-        exit(1);
-      }
-      var img = decodeImage(await _file.readAsBytes());
-
-      for (var w = 0; w < img!.width; w++) {
+      for (var w = 0; w < img.width; w++) {
         for (var h = 0; h < img.height; h++) {
           var pixel = img.getPixel(w, h);
           // max is 0xFFFFFFFF
@@ -58,12 +53,12 @@ class CursedCommand extends Command {
         }
       }
 
-      var filename = basenameWithoutExtension(_file.path);
+      var filename = basenameWithoutExtension(file.path);
       await File('${filename}_cursed.png').writeAsBytes(encodePng(img));
     }
 
-    files?.forEach((element) {
+    for (var element in files) {
       process(element);
-    });
+    }
   }
 }

@@ -1,5 +1,4 @@
 import 'dart:io';
-import 'dart:isolate';
 import 'dart:math';
 import 'package:args/command_runner.dart';
 import 'package:image/image.dart';
@@ -11,9 +10,12 @@ class RandomService {
 }
 
 class RandomCommand extends Command {
+  @override
   final name = "random";
+  @override
   final description = "makes random images";
-
+  @override
+  final aliases = ["r"];
   RandomCommand() {
     argParser.addOption('number', abbr: 'n', defaultsTo: '1');
     argParser.addOption('width', abbr: 'w', defaultsTo: '500');
@@ -22,6 +24,7 @@ class RandomCommand extends Command {
     argParser.addOption('name', defaultsTo: 'random_');
   }
 
+  @override
   void run() {
     Random randomizer;
     var seed = globalResults?['randomizerSeed'];
