@@ -1,0 +1,368 @@
+make all --print-data-base --no-builtin-variables --no-builtin-rules --question
+make: *** No rule to make target 'all'.  Stop.
+ 
+# GNU Make 4.2.1
+# Built for x86_64-pc-linux-gnu
+# Copyright (C) 1988-2016 Free Software Foundation, Inc.
+# License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+# This is free software: you are free to change and redistribute it.
+# There is NO WARRANTY, to the extent permitted by law.
+
+# Make data base, printed on Sat Mar 12 17:31:58 2022
+
+# Variables
+
+# automatic
+<D = $(patsubst %/,%,$(dir $<))
+# environment
+RUBY_VERSION = ruby-2.7.5
+# automatic
+?F = $(notdir $?)
+# environment
+GP_OPEN_EDITOR = /ide/bin/remote-cli/gitpod-code
+# default
+.SHELLFLAGS := -c
+# environment
+VSCODE_LOG_NATIVE = false
+# environment
+VSX_REGISTRY_URL = https://open-vsx.gitpod.io
+# environment
+GRADLE_HOME = /home/gitpod/.sdkman/candidates/gradle/current
+# environment
+rvm_path = /home/gitpod/.rvm
+# environment
+SUPERVISOR_ADDR = localhost:22999
+# environment
+SUPERVISOR_ENVVAR_OTS = https://gitpod.io/api/ots/get/306fcd66-2364-4094-b6ed-eab358a36ff0
+# automatic
+@D = $(patsubst %/,%,$(dir $@))
+# automatic
+@F = $(notdir $@)
+# makefile
+CURDIR := /workspace/imgutils
+# makefile (from 'Makefile', line 1)
+SHELL := /bin/bash
+# environment
+VSCODE_NLS_CONFIG = {"locale":"en-US","availableLanguages":{}}
+# environment
+_ = /ide/node
+# environment
+GITPOD_THEIA_PORT = 23000
+# automatic
+?D = $(patsubst %/,%,$(dir $?))
+# environment
+GITPOD_ANALYTICS_WRITER = segment
+# environment
+GO_VERSION = 1.17.5
+# environment
+MAVEN_HOME = /home/gitpod/.sdkman/candidates/maven/current
+# makefile (from 'Makefile', line 1)
+MAKEFILE_LIST :=  Makefile
+# environment
+GITPOD_WORKSPACE_CONTEXT_URL = https://github.com/TheHackerCoding/imgutils
+# 'override' directive
+GNUMAKEFLAGS := 
+# environment
+VSCODE_VERBOSE_LOGGING = true
+# environment
+THEIA_WORKSPACE_ROOT = /workspace/imgutils
+# environment
+INFOPATH = :/home/linuxbrew/.linuxbrew/share/info
+# environment
+LESSOPEN = | /usr/bin/lesspipe %s
+# environment
+GIT_EDITOR = /ide/bin/remote-cli/gitpod-code --wait
+# environment
+VSCODE_CWD = /ide
+# default
+MAKE_HOST := x86_64-pc-linux-gnu
+# environment
+PATH = /ide/bin/remote-cli:/home/gitpod/.nix-profile/bin:/home/gitpod/.pyenv/plugins/pyenv-virtualenv/shims:/home/gitpod/.nix-profile/bin:/home/gitpod/.nix-profile/bin:/home/gitpod/.sdkman/candidates/maven/current/bin:/home/gitpod/.sdkman/candidates/java/current/bin:/home/gitpod/.sdkman/candidates/gradle/current/bin:/home/gitpod/.rvm/gems/ruby-2.7.5/bin:/home/gitpod/.rvm/gems/ruby-2.7.5@global/bin:/home/gitpod/.rvm/rubies/ruby-2.7.5/bin:/home/gitpod/.pyenv/plugins/pyenv-virtualenv/shims:/home/gitpod/.nix-profile/bin:/ide/bin/remote-cli:/workspace/go/bin:/workspace/.pip-modules/bin:/sbin:/usr/local/sbin:/home/gitpod/go-packages/bin:/workspace/.rvm/bin:/home/gitpod/.cargo/bin:/home/linuxbrew/.linuxbrew/bin:/home/linuxbrew/.linuxbrew/sbin/:/home/gitpod/go/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/home/gitpod/.pyenv/shims:/bin:/workspace/.cargo/bin:/usr/bin:/usr/local/bin:/home/gitpod/.nvm/versions/node/v16.13.2/bin:/usr/sbin:/home/gitpod/.pyenv/bin:/home/gitpod/.nvm/versions/node/v16.13.2/bin:/home/gitpod/.rvm/bin:/home/gitpod/.nvm/versions/node/v16.13.2/bin:/home/gitpod/.nvm/versions/node/v16.13.2/bin
+# environment
+GITPOD_WORKSPACE_ID = thehackercoding-imgutils-ghg5wpovjuv
+# environment
+GITPOD_INTERVAL = 30000
+# environment
+CARGO_HOME = /workspace/.cargo
+# environment
+rvm_stored_umask = 0022
+# environment
+GITPOD_WORKSPACE_CLUSTER_HOST = ws-us34.gitpod.io
+# environment
+GITPOD_ANALYTICS_SEGMENT_KEY = bUY8IRdJ42KjLOBS9LoIHMYFBD8rSzjU
+# environment
+SDKMAN_DIR = /home/gitpod/.sdkman
+# environment
+SDKMAN_CANDIDATES_API = https://api.sdkman.io/2
+# environment
+GOPATH = /workspace/go
+# environment
+SDKMAN_PLATFORM = linuxx64
+# environment
+VSCODE_LOG_STACK = false
+# environment
+VSCODE_IPC_HOOK_CLI = /tmp/vscode-ipc-e004083f-2210-4e53-9f72-76c74f9df43c.sock
+# default
+.FEATURES := target-specific order-only second-expansion else-if shortest-stem undefine oneshell archives jobserver output-sync check-symlink load
+# environment
+NIX_VERSION = 2.6.0
+# environment
+LS_COLORS = 
+# automatic
+%F = $(notdir $%)
+# environment
+GP_PREVIEW_BROWSER = /ide/bin/remote-cli/gitpod-code --preview
+# environment
+VISUAL = /ide/bin/remote-cli/gitpod-code
+# environment
+NIX_SSL_CERT_FILE = /etc/ssl/certs/ca-certificates.crt
+# environment
+VSCODE_PIPE_LOGGING = true
+# environment
+rvm_bin_path = /home/gitpod/.rvm/bin
+# environment
+WORKSPACEKIT_WRAP_NETNS = true
+# default
+.LOADED := 
+# environment
+GEM_HOME = /home/gitpod/.rvm/gems/ruby-2.7.5
+# environment
+MANPATH = /home/gitpod/.nix-profile/share/man:/home/gitpod/.nix-profile/share/man:/home/gitpod/.nix-profile/share/man:/home/gitpod/.nix-profile/share/man::/home/linuxbrew/.linuxbrew/share/man
+# environment
+NODE_VERSION = 16.13.2
+# environment
+VSCODE_AMD_ENTRYPOINT = vs/workbench/api/node/extensionHostProcess
+# environment
+PYENV_SHELL = bash
+# environment
+HOME = /home/gitpod
+# environment
+THEIA_WEBVIEW_EXTERNAL_ENDPOINT = webview-{{hostname}}
+# environment
+LESSCLOSE = /usr/bin/lesspipe %s %s
+# environment
+APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = true
+# environment
+GITPOD_CLI_APITOKEN = p9jEFmM3sl.Ka5M4hcnn2Ks7evcEGDoO
+# automatic
++F = $(notdir $+)
+# environment
+VSCODE_HANDLES_UNCAUGHT_ERRORS = true
+# automatic
+^D = $(patsubst %/,%,$(dir $^))
+# environment
+HOSTNAME = thehackercoding-imgutils-ghg5wpovjuv
+# environment
+GRADLE_USER_HOME = /workspace/.gradle/
+# environment
+MAKELEVEL := 0
+# environment
+GEM_PATH = /home/gitpod/.rvm/gems/ruby-2.7.5:/home/gitpod/.rvm/gems/ruby-2.7.5@global
+# environment
+SDKMAN_VERSION = 5.13.2
+# default
+MAKE = $(MAKE_COMMAND)
+# default
+MAKECMDGOALS := all
+# environment
+IRBRC = /home/gitpod/.rvm/rubies/ruby-2.7.5/.irbrc
+# environment
+SHLVL = 0
+# environment
+NIX_PROFILES = /nix/var/nix/profiles/default /home/gitpod/.nix-profile
+# environment
+GITPOD_GIT_USER_NAME = TheHackerCoding
+# environment
+JAVA_HOME = /home/gitpod/.sdkman/candidates/java/current
+# default
+MAKE_VERSION := 4.2.1
+# environment
+USER = gitpod
+# makefile
+.DEFAULT_GOAL := build
+# environment
+GITPOD_EXTERNAL_EXTENSIONS = []
+# environment
+GOROOT = /home/gitpod/go
+# environment
+GITPOD_IDE_ALIAS = code
+# environment
+rvm_version = 1.29.12 (latest)
+# automatic
+%D = $(patsubst %/,%,$(dir $%))
+# environment
+GITPOD_REPO_ROOT = /workspace/imgutils
+# environment
+PIP_USER = no
+# environment
+THEIA_RATELIMIT_LOG = 50
+# environment
+THEIA_MINI_BROWSER_HOST_PATTERN = browser-{{hostname}}
+# environment
+GITPOD_GIT_USER_EMAIL = triniziah@gmail.com
+# default
+MAKE_COMMAND := make
+# environment
+OLDPWD = /
+# default
+.VARIABLES := 
+# automatic
+*F = $(notdir $*)
+# environment
+GITPOD_HOST = https://gitpod.io
+# makefile
+MAKEFLAGS = pqrR
+# environment
+MFLAGS = -pqrR
+# automatic
+*D = $(patsubst %/,%,$(dir $*))
+# environment
+NVM_DIR = /home/gitpod/.nvm
+# automatic
++D = $(patsubst %/,%,$(dir $+))
+# environment
+rvm_user_install_flag = 1
+# environment
+BROWSER = /ide/bin/helpers/browser.sh
+# environment
+GITPOD_MEMORY = 3435
+# environment
+GITPOD_TASKS = [{"init":"make"}]
+# default
+MAKEFILES := 
+# environment
+GITPOD_CODE_HOST = https://gitpod.io
+# environment
+HOMEBREW_NO_AUTO_UPDATE = 1
+# automatic
+<F = $(notdir $<)
+# environment
+PIPENV_VENV_IN_PROJECT = true
+# environment
+TRIGGER_REBUILD = 1
+# environment
+GP_EXTERNAL_BROWSER = /ide/bin/remote-cli/gitpod-code --openExternal
+# environment
+SDKMAN_CANDIDATES_DIR = /home/gitpod/.sdkman/candidates
+# environment
+EDITOR = /ide/bin/remote-cli/gitpod-code
+# environment
+PWD = /workspace/imgutils
+# environment
+LC_ALL = C
+# environment
+GITPOD_WORKSPACE_CONTEXT = {"isFile":false,"path":"","title":"TheHackerCoding/imgutils - main","ref":"main","refType":"branch","revision":"6d4ee533e8ff31c9c88a2fe044e4cf93bdd93f36","repository":{"cloneUrl":"https://github.com/TheHackerCoding/imgutils.git","host":"github.com","name":"imgutils","owner":"TheHackerCoding","private":false},"normalizedContextURL":"https://github.com/TheHackerCoding/imgutils","additionalFiles":{".gitpod.yml":"# This configuration file was automatically generated by Gitpod.\n# Please adjust to your needs (see https://www.gitpod.io/docs/config-gitpod-file)\n# and commit this file to your remote git repository to share the goodness with others.\n\ntasks:\n  - init: make\n\n\n"}}
+# environment
+JAVA_TOOL_OPTIONS =  -Xmx3435m
+# makefile (from 'Makefile', line 2)
+OUT = dist/
+# automatic
+^F = $(notdir $^)
+# environment
+rvm_prefix = /home/gitpod
+# default
+SUFFIXES := 
+# environment
+APACHE_DOCROOT_IN_REPO = public
+# environment
+PYENV_VIRTUALENV_INIT = 1
+# environment
+NGINX_DOCROOT_IN_REPO = public
+# default
+.INCLUDE_DIRS = /usr/include /usr/local/include /usr/include
+# environment
+rvm_loaded_flag = 1
+# environment
+GITPOD_INSTANCE_ID = b1682362-219d-4dfb-a604-e7da3a96fa0b
+# environment
+GITPOD_WORKSPACE_URL = https://thehackercoding-imgutils-ghg5wpovjuv.ws-us34.gitpod.io
+# default
+.RECIPEPREFIX := 
+# environment
+GITPOD_RESOLVED_EXTENSIONS = {"vscode.bat@1.44.2":{"fullPluginName":"vscode.bat@1.44.2","url":"local","kind":"builtin"},"vscode.clojure@1.44.2":{"fullPluginName":"vscode.clojure@1.44.2","url":"local","kind":"builtin"},"vscode.coffeescript@1.44.2":{"fullPluginName":"vscode.coffeescript@1.44.2","url":"local","kind":"builtin"},"vscode.cpp@1.44.2":{"fullPluginName":"vscode.cpp@1.44.2","url":"local","kind":"builtin"},"vscode.csharp@1.44.2":{"fullPluginName":"vscode.csharp@1.44.2","url":"local","kind":"builtin"},"llvm-vs-code-extensions.vscode-clangd@0.1.5":{"fullPluginName":"llvm-vs-code-extensions.vscode-clangd@0.1.5","url":"local","kind":"builtin"},"vscode.css@1.51.1":{"fullPluginName":"vscode.css@1.51.1","url":"local","kind":"builtin"},"vscode.css-language-features@1.51.1":{"fullPluginName":"vscode.css-language-features@1.51.1","url":"local","kind":"builtin"},"vscode.debug-auto-launch@1.44.2":{"fullPluginName":"vscode.debug-auto-launch@1.44.2","url":"local","kind":"builtin"},"vscode.emmet@1.44.2":{"fullPluginName":"vscode.emmet@1.44.2","url":"local","kind":"builtin"},"vscode.fsharp@1.44.2":{"fullPluginName":"vscode.fsharp@1.44.2","url":"local","kind":"builtin"},"vscode.go@1.44.2":{"fullPluginName":"vscode.go@1.44.2","url":"local","kind":"builtin"},"vscode.groovy@1.44.2":{"fullPluginName":"vscode.groovy@1.44.2","url":"local","kind":"builtin"},"vscode.handlebars@1.44.2":{"fullPluginName":"vscode.handlebars@1.44.2","url":"local","kind":"builtin"},"vscode.hlsl@1.44.2":{"fullPluginName":"vscode.hlsl@1.44.2","url":"local","kind":"builtin"},"vscode.html@1.51.1":{"fullPluginName":"vscode.html@1.51.1","url":"local","kind":"builtin"},"vscode.html-language-features@1.51.1":{"fullPluginName":"vscode.html-language-features@1.51.1","url":"local","kind":"builtin"},"vscode.ini@1.44.2":{"fullPluginName":"vscode.ini@1.44.2","url":"local","kind":"builtin"},"vscode.java@1.53.2":{"fullPluginName":"vscode.java@1.53.2","url":"local","kind":"builtin"},"vscode.javascript@1.44.2":{"fullPluginName":"vscode.javascript@1.44.2","url":"local","kind":"builtin"},"vscode.json@1.44.2":{"fullPluginName":"vscode.json@1.44.2","url":"local","kind":"builtin"},"vscode.json-language-features@1.46.1":{"fullPluginName":"vscode.json-language-features@1.46.1","url":"local","kind":"builtin"},"vscode.less@1.44.2":{"fullPluginName":"vscode.less@1.44.2","url":"local","kind":"builtin"},"vscode.log@1.44.2":{"fullPluginName":"vscode.log@1.44.2","url":"local","kind":"builtin"},"vscode.lua@1.44.2":{"fullPluginName":"vscode.lua@1.44.2","url":"local","kind":"builtin"},"vscode.make@1.44.2":{"fullPluginName":"vscode.make@1.44.2","url":"local","kind":"builtin"},"vscode.markdown@1.44.2":{"fullPluginName":"vscode.markdown@1.44.2","url":"local","kind":"builtin"},"vscode.npm@1.39.1":{"fullPluginName":"vscode.npm@1.39.1","url":"local","kind":"builtin"},"vscode.objective-c@1.44.2":{"fullPluginName":"vscode.objective-c@1.44.2","url":"local","kind":"builtin"},"vscode.perl@1.44.2":{"fullPluginName":"vscode.perl@1.44.2","url":"local","kind":"builtin"},"vscode.php@1.44.2":{"fullPluginName":"vscode.php@1.44.2","url":"local","kind":"builtin"},"vscode.powershell@1.44.2":{"fullPluginName":"vscode.powershell@1.44.2","url":"local","kind":"builtin"},"vscode.pug@1.44.2":{"fullPluginName":"vscode.pug@1.44.2","url":"local","kind":"builtin"},"vscode.python@1.47.3":{"fullPluginName":"vscode.python@1.47.3","url":"local","kind":"builtin"},"vscode.r@1.44.2":{"fullPluginName":"vscode.r@1.44.2","url":"local","kind":"builtin"},"vscode.razor@1.44.2":{"fullPluginName":"vscode.razor@1.44.2","url":"local","kind":"builtin"},"vscode.ruby@1.44.2":{"fullPluginName":"vscode.ruby@1.44.2","url":"local","kind":"builtin"},"vscode.rust@1.44.2":{"fullPluginName":"vscode.rust@1.44.2","url":"local","kind":"builtin"},"vscode.scss@1.44.2":{"fullPluginName":"vscode.scss@1.44.2","url":"local","kind":"builtin"},"vscode.shaderlab@1.44.2":{"fullPluginName":"vscode.shaderlab@1.44.2","url":"local","kind":"builtin"},"vscode.shellscript@1.44.2":{"fullPluginName":"vscode.shellscript@1.44.2","url":"local","kind":"builtin"},"vscode.sql@1.44.2":{"fullPluginName":"vscode.sql@1.44.2","url":"local","kind":"builtin"},"vscode.swift@1.44.2":{"fullPluginName":"vscode.swift@1.44.2","url":"local","kind":"builtin"},"vscode.typescript@1.44.2":{"fullPluginName":"vscode.typescript@1.44.2","url":"local","kind":"builtin"},"vscode.typescript-language-features@1.44.2":{"fullPluginName":"vscode.typescript-language-features@1.44.2","url":"local","kind":"builtin"},"vscode.vb@1.44.2":{"fullPluginName":"vscode.vb@1.44.2","url":"local","kind":"builtin"},"vscode.xml@1.44.2":{"fullPluginName":"vscode.xml@1.44.2","url":"local","kind":"builtin"},"vscode.yaml@1.44.2":{"fullPluginName":"vscode.yaml@1.44.2","url":"local","kind":"builtin"},"redhat.java@0.75.0":{"fullPluginName":"redhat.java@0.75.0","url":"local","kind":"builtin"},"vscjava.vscode-java-debug@0.27.1":{"fullPluginName":"vscjava.vscode-java-debug@0.27.1","url":"local","kind":"builtin"},"vscjava.vscode-java-dependency@0.18.0":{"fullPluginName":"vscjava.vscode-java-dependency@0.18.0","url":"local","kind":"builtin"},"ms-vscode.node-debug@1.38.4":{"fullPluginName":"ms-vscode.node-debug@1.38.4","url":"local","kind":"builtin"},"ms-vscode.node-debug2@1.33.0":{"fullPluginName":"ms-vscode.node-debug2@1.33.0","url":"local","kind":"builtin"},"ms-python.python@2020.7.96456":{"fullPluginName":"ms-python.python@2020.7.96456","url":"local","kind":"builtin"},"golang.Go@0.14.4":{"fullPluginName":"golang.go@0.14.4","url":"local","kind":"builtin"},"redhat.vscode-xml@0.11.0":{"fullPluginName":"redhat.vscode-xml@0.11.0","url":"local","kind":"builtin"},"redhat.vscode-yaml@0.8.0":{"fullPluginName":"redhat.vscode-yaml@0.8.0","url":"local","kind":"builtin"},"bmewburn.vscode-intelephense-client@1.4.0":{"fullPluginName":"bmewburn.vscode-intelephense-client@1.4.0","url":"local","kind":"builtin"},"felixfbecker.php-debug@1.13.0":{"fullPluginName":"felixfbecker.php-debug@1.13.0","url":"local","kind":"builtin"},"rust-lang.rust@0.7.8":{"fullPluginName":"rust-lang.rust@0.7.8","url":"local","kind":"builtin"},"vscode.theme-abyss@1.44.2":{"fullPluginName":"vscode.theme-abyss@1.44.2","url":"local","kind":"builtin"},"vscode.theme-kimbie-dark@1.44.2":{"fullPluginName":"vscode.theme-kimbie-dark@1.44.2","url":"local","kind":"builtin"},"vscode.theme-monokai@1.44.2":{"fullPluginName":"vscode.theme-monokai@1.44.2","url":"local","kind":"builtin"},"vscode.theme-monokai-dimmed@1.44.2":{"fullPluginName":"vscode.theme-monokai-dimmed@1.44.2","url":"local","kind":"builtin"},"vscode.theme-quietlight@1.44.2":{"fullPluginName":"vscode.theme-quietlight@1.44.2","url":"local","kind":"builtin"},"vscode.theme-red@1.44.2":{"fullPluginName":"vscode.theme-red@1.44.2","url":"local","kind":"builtin"},"vscode.theme-solarized-dark@1.44.2":{"fullPluginName":"vscode.theme-solarized-dark@1.44.2","url":"local","kind":"builtin"},"vscode.theme-solarized-light@1.44.2":{"fullPluginName":"vscode.theme-solarized-light@1.44.2","url":"local","kind":"builtin"},"vscode.theme-tomorrow-night-blue@1.44.2":{"fullPluginName":"vscode.theme-tomorrow-night-blue@1.44.2","url":"local","kind":"builtin"},"vscode.vscode-theme-seti@1.44.2":{"fullPluginName":"vscode.vscode-theme-seti@1.44.2","url":"local","kind":"builtin"},"vscode.merge-conflict@1.44.2":{"fullPluginName":"vscode.merge-conflict@1.44.2","url":"local","kind":"builtin"},"ms-vscode.references-view@0.0.47":{"fullPluginName":"ms-vscode.references-view@0.0.47","url":"local","kind":"builtin"},"EditorConfig.EditorConfig@0.15.1":{"fullPluginName":"editorconfig.editorconfig@0.15.1","url":"local","kind":"builtin"},"vscode.docker@1.47.3":{"fullPluginName":"vscode.docker@1.47.3","url":"local","kind":"builtin"}}
+# environment
+LANG = C
+# environment
+PYTHONUSERBASE = /workspace/.pip-modules
+# environment
+VSCODE_EXTHOST_WILL_SEND_SOCKET = true
+# environment
+MY_RUBY_HOME = /home/gitpod/.rvm/rubies/ruby-2.7.5
+# variable set hash-table stats:
+# Load=138/1024=13%, Rehash=0, Collisions=13/164=8%
+ 
+
+# Pattern-specific Variable Values
+
+# No pattern-specific variable values.
+
+# Directories
+
+# . (device 2346, inode 144538): 17 files, no impossibilities.
+
+# 17 files, no impossibilities in 1 directories.
+
+# Implicit Rules
+
+# No implicit rules.
+
+# Files
+
+# Not a target:
+all:
+#  Command line target.
+#  Implicit rule search has been done.
+#  File does not exist.
+#  File has not been updated.
+
+format:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 11):
+	dart format ./src
+
+# Not a target:
+Makefile:
+#  Implicit rule search has been done.
+#  Last modified 2022-02-28 15:31:35
+#  File has been updated.
+#  Successfully updated.
+
+build:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 5):
+	dart compile exe src/main.dart -o ./dist/imgutils
+
+# Not a target:
+.DEFAULT:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+install: build
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 8):
+	sudo mv dist/imgutils /usr/local/bin/imgutils
+
+# files hash-table stats:
+# Load=7/1024=1%, Rehash=0, Collisions=0/18=0%
+# VPATH Search Paths
+
+# No 'vpath' search paths.
+
+# No general ('VPATH' variable) search path.
+
+# strcache buffers: 1 (0) / strings = 25 / storage = 219 B / avg = 8 B
+# current buf: size = 8162 B / used = 219 B / count = 25 / avg = 8 B
+
+# strcache performance: lookups = 33 / hit rate = 24%
+# hash-table stats:
+# Load=25/8192=0%, Rehash=0, Collisions=1/33=3%
+# Finished Make data base on Sat Mar 12 17:31:58 2022
+
+ 

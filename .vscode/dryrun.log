@@ -1,0 +1,5 @@
+make --dry-run --always-make --keep-going --print-directory
+make: Entering directory '/workspace/imgutils'
+dart compile exe src/main.dart -o ./dist/imgutils
+make: Leaving directory '/workspace/imgutils'
+ 
