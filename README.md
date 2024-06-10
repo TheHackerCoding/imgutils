@@ -2,20 +2,18 @@
 
 ## Requirements
 
-* Dart (language used)
-* Make (uhh ion feel like using `dart compile`)
+* Rust
 
 ## Make the tool
 
 ```bash
-make
+cargo r
 ```
 
 ## Installing (Linux only atm)
 
-```bash
-make install
-```
+¯\_(ツ)_/¯
+
 
 ## Results
 
@@ -25,7 +23,7 @@ make install
 | -------------------------------- | --------------------------------------- |
 | ![Original](assets/original.png) | ![New](assets/original_crystalized.png) |
 
-### Random
+### Random 
 
 | 500x500                               | 1000x1000                                |
 | ------------------------------------- | ---------------------------------------- |
