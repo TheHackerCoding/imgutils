@@ -12,7 +12,7 @@ cargo r
 
 ## Installing (Linux only atm)
 
-¯\_(ツ)_/¯
+`sudo ./install`
 
 
 ## Results

@@ -8,10 +8,9 @@ fn main() {
     let mut engine = Engine::new();
 
     let cli = command!()
-        .propagate_version(true)
+        .about("eh")
         .subcommand_required(true)
         .arg_required_else_help(true)
-        .about("eh")
         .subcommand(
             Command::new("curse")
                 .about("cursing images")
@@ -31,11 +30,18 @@ fn main() {
                 ),
         )
         .subcommand(
-            Command::new("random").about("idk random imgs").arg(
-                arg!(-w --width <WIDTH>)
-                    .default_value("500")
-                    .value_parser(clap::value_parser!(i32)),
-            ),
+            Command::new("random")
+                .about("idk random imgs")
+                .arg(
+                    arg!(-w --width <WIDTH>)
+                        .default_value("500")
+                        .value_parser(clap::value_parser!(i32)),
+                )
+                .arg(
+                    arg!(-H --height <HEIGHT>)
+                        .required(false)
+                        .value_parser(clap::value_parser!(i32)),
+                ),
         )
         .get_matches();
 
@@ -45,7 +51,7 @@ fn main() {
                 random.get_one::<i32>("width").copied(),
                 random.get_one::<i32>("height").copied(),
             );
-            output.save("random.png").unwrap()
+            output.save(format!("{}/random.png", std::env::current_dir().unwrap().to_str().unwrap())).unwrap()
         }
         Some(("curse", curse)) => {
             if curse.contains_id("FILE_PATH") {
@@ -59,7 +65,8 @@ fn main() {
                 );
                 output
                     .save(format!(
-                        "{}_cursed.png",
+                        "{}/{}_cursed.png",
+                        std::env::current_dir().unwrap().to_str().unwrap(),
                         file.file_stem().unwrap().to_str().unwrap()
                     ))
                     .unwrap();

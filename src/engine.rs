@@ -44,20 +44,20 @@ impl Engine {
 
         // Calculate luminance using a common formula
         let luminance = 0.299 * (red as f64) + 0.587 * (green as f64) + 0.114 * (blue as f64);
-        return luminance;
+        return luminance
     }
 
     pub fn darkness_check(color: u32) -> bool {
         let luminance = Self::luminance_standard(color);
         let is_dark = luminance < 100.0;
-        return is_dark;
+        return is_dark
     }
 
     pub fn lightness_check(color: u32) -> bool {
         let luminance = Self::luminance_standard(color);
         let is_light = luminance > 200.0;
 
-        return is_light;
+        return is_light
     }
     pub fn curse(
         &mut self,
